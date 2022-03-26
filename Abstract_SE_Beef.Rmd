@@ -1,0 +1,16 @@
+---
+title: "Analyzing Socioeconomic Drivers of the US Beef Industry"
+output: html_document
+---
+
+<br>
+
+# Working Abstract
+As the US beef industry moves towards a more sustainable status, the industry is working to understand how to best balance the needs of producers, the environment, the consumers, and the communities that rely on beef production. Serious environmental concerns are associated with beef production, and as solutions are implemented, it will be important to identify the socio-economic conditions that foster or detract from community well-being (Bentley Brymer et al., 2020). Our interdisciplinary research provides a critical synthesis for scientists and policymakers looking to promote agricultural community well-being. In providing a birds-eye-view of historical trends in beef production, we hope the reader gains a more complete understanding of where the beef industry has been – and perhaps – where it is headed. 
+
+In collaboration with a study prepared for the National Cattlemen’s Beef Association (NCBA), we have identified regional trends in cattle inventory, farm inventory, net farm income, cattle prices, and farm expenses across all pre-harvest sectors and at all production scales since 1982. The primary findings of our analysis suggests that the cow calf sector is slowly relocating to the central and northern Great Plains (North Dakota, South Dakota, Kansas and Nebraska) at an average annual growth rate of 3,057 cows per year, since 1980. The growth of the cow/calf sector in this region raises concerns given the growing body of literature and science demonstrating climate variability and vulnerability of Great Plain rangelands (Briske et al., 2021), (Klemm & Briske, 2021). There is a great deal of room for further study into the cause(s) and effect(s) of this relocation. This study provides only a synthesis of environmental and economic factors that may have driven this suspected relocation.
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+# i don't think I have any code I want to add (maybe plot of national beef cows)
+```
