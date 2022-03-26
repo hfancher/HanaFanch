@@ -1,0 +1,22 @@
+---
+title: "LQ for reg"
+output: html_document
+---
+
+```{r}
+# regional econ LQ plot
+#file pathway: /Users/hrf/Desktop/R data/Regional Econ/LQ Saguache County, Colorado.xlsx
+
+
+library(readxl)
+library(plotly)
+library(dplyr)
+library(tidyverse)
+
+df <- read_excel("LQ.Saguache.County.Colorado(web).xlsx",sheet=1,col_names=TRUE)
+
+# delete 2015 rows (they have na.s)
+df1 <- na.omit(df)
+df1
+
+```

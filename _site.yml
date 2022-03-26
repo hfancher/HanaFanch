@@ -5,6 +5,8 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "Current Projects"
+      href: LQ-for-reg.html
+    - text: "Current Projects"
       href: Journal.html
     - text: "Links"
       href: Links.html
