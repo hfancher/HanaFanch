@@ -1,0 +1,148 @@
+---
+title: "pastexample"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+```
+
+text
+
+<br>
+
+## State and regional Plots
+##### Cows that have calved Inventory, 1980 - 2020
+
+
+Notes on abbreviations: 
+ctc = "Cows that Calved"
+og = original
+NCBA  = National Cattleman's Beef Assoc.
+R1, R2, R3, etc.. = Region1, Region2, Region3, etc.. 
+
+PROJECT GOAL: Create Regional Plots (7 plots based on NCBA regions 1:7) with state totals of "ctc" (cows that calved) over time. Create one summary line plot with one line per region incorder to compare regional totals.
+
+Workspace: is on dropbox, the LMIC excel is the original data with regional and national totals and all dates.REMEMBER FOR REPRODUCIBILITY, CHANGE WORKSPACE (IF NECESSARY) TO MATCH LOCATION OF THE EXCEL FILE!!
+
+
+```{r}
+# warning
+# messgaes 
+# results 
+# echo 
+
+
+#############    Begin Code: set workspace, load libraries     #############
+
+remove(list = ls()) # deletes all saved objects
+setwd("/Users/hrf/Dropbox/NWFCS_Writing and Code Samples/Code/")
+
+
+#Load Libraries
+library(readxl)
+library(dplyr)
+library(ggplot2)
+library(reshape2)
+library(ggrepel)
+library(gridExtra)
+library(cowplot)
+library(ggpubr)
+
+
+# loading the FULL Dataset --------------------------------------
+datafull_og_ctc<-read_xlsx("LMIC_full_dataset_total.xlsx", sheet=4, colnames(TRUE)) 
+# NOTE SHEET 4 IS COWS THAT HAVE CALVED!!! ## <-- Change Sheet number for each sector (steers, replacements, feeders, etc..)
+
+#############    Cleaning     #############
+# Select: States col and 1980 - 2021 -----------
+datafull_ctc_80toPrs<-datafull_og_ctc %>% select('States',`1980`:`2020`)
+# Reshaping: Data wide -> data long form (and rename columns) ------------------------------
+#Melt data form 80s to present
+data_melt_ctc <- melt(datafull_ctc_80toPrs)
+# name columns (note, just incase i misspelled state in the xls)...
+colnames(data_melt_ctc) <- c("State","variable", "value")
+# add the region back in
+data_melt_ctc$region <- datafull_og_ctc$region
+# data needs label column (labeling just the last occurance)
+data_melt_ctc$label <- NA
+data_melt_ctc$label[which(data_melt_ctc$variable == last(data_melt_ctc$variable))] <- data_melt_ctc$State[which(data_melt_ctc$variable == last(data_melt_ctc$variable))]
+# Filtering: Keep all states (get rid of "Totals") -----------------------------------
+# remove the totals (because just looking at state level, not regional totals for this plot)... use with %notin%
+`%notin%`<-Negate(`%in%`) # creating the 'notin' operator
+data_melt_ctc <- data_melt_ctc %>% filter(State %notin% c("R1 Total", "R2 Total","R3 Total","R4 Total","R5 Total","R6 Total","R7 Total","US Total"))
+# note to self, here is another alternative to the %notin% alternative: 
+
+#knitr::kable(head(data_melt_ctc %>% filter(!grepl('Total', State ))))
+reactable::reactable(data_melt_ctc %>% filter(!grepl('Total', State )))
+```
+
+```{r}
+
+# warning
+# messgaes 
+# results 
+# echo 
+
+#############    Regional Plots (7 plots): ggplot     #############
+# ggPLOT: REGION 1 COWS THAT CALVES -----------------------------------------------
+#plot (more aesthetic adjustments below)
+R1_ctc <- ggplot(data_melt_ctc[data_melt_ctc$region == '1',], 
+                 aes(variable, value, col = State, group=factor(State))) + 
+  geom_line(aes(color=factor(State))) + 
+  labs(x = "Year", y = "Number of Stock (In Thousands)", 
+       caption = "includes dairy", title = "Region 1 - Cows That Have Calved") +
+  theme(plot.caption = element_text(color = "grey", face = "italic"),
+        plot.title = element_text(hjust = 0.5)) +
+  theme(axis.text.x = element_text(angle = 60),
+        plot.title = element_text(color = "black",
+                                  face = "bold", size = 12, family = "Arial")) +
+  geom_label_repel(aes(label = label),
+                   nudge_x = 1,
+                   na.rm = TRUE)+
+  theme(legend.position = "none")
+
+
+# Setting the background 
+R1_ctc <- R1_ctc + theme(
+  panel.background = element_rect(fill = "white", colour = "grey",
+                                  size = 0.5, linetype = "solid"),
+  panel.grid.major = element_line(size = 0.1, linetype = 'solid',
+                                  colour = "grey"), 
+  panel.grid.minor = element_line(size = 0.1, linetype = 'solid',
+                                  colour = "grey"))
+
+```
+
+setting the axis scales
+
+```{r}
+summary(data_melt_ctc[data_melt_ctc$region == '1',]) #use in deciding scale
+R1_ctc <- R1_ctc + scale_y_continuous(breaks=seq(0,2000,100)) 
+R1_ctc <- R1_ctc + scale_x_discrete(breaks=seq(1980,2021,5)) #
+```
+
+View the final plot
+
+```{r}
+R1_ctc
+```
+
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+# echo means it wont show your code, just the plot, 
+# results, does the reverse, if results =false it won't show the output
+
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

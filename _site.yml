@@ -6,8 +6,8 @@ navbar:
       href: index.html
     - text: "Current Projects"
       href: LQ-for-reg.html
-    - text: "Current Projects"
-      href: Journal.html
+    - text: "Past Projects"
+      href: pastexample.html
     - text: "Links"
       href: Links.html
 output_dir: "docs"
