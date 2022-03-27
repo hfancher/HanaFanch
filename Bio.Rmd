@@ -1,0 +1,19 @@
+---
+title: "Bio"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Born in Wheatland, Wyoming but raised mostly in Denver, Colorado. Growing up I was fortunate to experience the best of both worlds; of city life and rural living. My youth helping on my relatives ranch installed a life-long interested in agriculture. The interested has taken me to the mountains of southern New Mexico, to Hawaiian grasslands, the high desert of Colorado, and the plains of Wyoming. I've been fortunate to have met strong and interesting land stewards along each step of the way. 
+
+If you are interested in my CV click this [link]<http://rmarkdown.rstudio.com>.
+
+</div>
+<div class="col-sm-6">
+
+<a href = "https://crumplab.github.io">
+![](images/kernza-trials_UNL.png)

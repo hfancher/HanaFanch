@@ -19,27 +19,19 @@ output: html_document
 
 # **Hana Rae**
 
-This is a template example for lab journaling. Students in Matt Crump's Human Cognition and Performance Lab will use this template to learn R, and other things. Students can replace this text with more fun things. People not in my lab can use this too. Find me on my [LinkedIn](https://www.linkedin.com/in/hana-fancher001) or on [github](https://github.com/hfancher).
+Welcome! I am a second year master's student at the University of Wyoming Department of Agricultural and Applied Economics. I'm interested, broadly speaking, in the intersection of agriculture and conservation - in how resources are valued and allocations are made - and I love cross-disciplinary research! I've built this website to add projects and resources as I go, and if you find something interesting please don't hesitate to reach out! You can find my contact information on my bio page, connect with me on my [LinkedIn](https://www.linkedin.com/in/hana-fancher001), or on [github](https://github.com/hfancher).
 
+## Contact
 
-
-## How to use
-
-1. fork the repo for this website and follow instructions on read me to get set up. [https://github.com/CrumpLab/LabJournalWebsite](https://github.com/CrumpLab/LabJournalWebsite)
-
-2. Blog/journal what you are doing in R, by editing the Journal.Rmd. See the [Journal page](https://crumplab.github.io/LabJournalWebsite/Journal.html) for an example of what to do to get started learning R.
-
-3. See the [links page](https://crumplab.github.io/LabJournalWebsite/Links.html) for lots of helpful links on learning R.
-
-4. Change everything to make it your own.
-
+See my [[Bio page](https://crumplab.github.io/LabJournalWebsite/Journal.html)] bio page, or email me directly at hfancher@uwyo.edu 
 
 </div>
 <div class="col-sm-6">
 
-### [Crump Lab: Human Cognition and Performance](https://crumplab.github.io)
+
 
 <a href = "https://crumplab.github.io">
-![](images/logo.png)
+![](images/kernza-trials_UNL.png)
 </a>
 </div>
+
