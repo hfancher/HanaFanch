@@ -289,7 +289,6 @@ $(document).ready(function () {
 
 library(readxl)
 library(plotly)</code></pre>
-<pre><code>## Loading required package: ggplot2</code></pre>
 <pre><code>## 
 ## Attaching package: &#39;plotly&#39;</code></pre>
 <pre><code>## The following object is masked from &#39;package:ggplot2&#39;:
@@ -301,24 +300,10 @@ library(plotly)</code></pre>
 <pre><code>## The following object is masked from &#39;package:graphics&#39;:
 ## 
 ##     layout</code></pre>
-<pre class="r"><code>library(dplyr)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;dplyr&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     intersect, setdiff, setequal, union</code></pre>
-<pre class="r"><code>library(tidyverse)</code></pre>
-<pre><code>## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──</code></pre>
-<pre><code>## ✓ tibble  3.1.6     ✓ purrr   0.3.4
-## ✓ tidyr   1.2.0     ✓ stringr 1.4.0
-## ✓ readr   2.1.2     ✓ forcats 0.5.1</code></pre>
-<pre><code>## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-## x dplyr::filter() masks plotly::filter(), stats::filter()
-## x dplyr::lag()    masks stats::lag()</code></pre>
-<pre class="r"><code>df &lt;- read_excel(&quot;LQ.Saguache.County.Colorado(web).xlsx&quot;,sheet=1,col_names=TRUE)
+<pre class="r"><code>library(dplyr)
+library(tidyverse)
+
+df &lt;- read_excel(&quot;LQ.Saguache.County.Colorado(web).xlsx&quot;,sheet=1,col_names=TRUE)
 
 # delete 2015 rows (they have na.s)
 df1 &lt;- na.omit(df)
