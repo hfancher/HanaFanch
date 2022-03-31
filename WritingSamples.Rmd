@@ -1,0 +1,36 @@
+---
+title: "Writing Samples"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br>
+
+### In the links below I have provided writing sames from my time in academia, as well as the private and public sectors. 
+<br>
+
+### Academic Report - M.S. Dept. of Agricultural and Applied Economics
+#### Advanced Agricultural Market Theory AGEC 5710
+Please follow this [link](https://www.dropbox.com/s/gl1x1mpxdnooow3/Iranian%20Milk%20Market_Critique.pdf?dl=0) to a brief synopsis and critique of “Investigating Bargaining Power of Farmers and Processors in Iran's Dairy Market,” by Shokoohi, Chizari, and Asgari (2019).
+
+<br>
+
+### Opinion & Comment - Nature Climate Change, March 2014
+#### Palm oil wastewater methane emissions and bioenergy potential
+I am the third author on this Letter to the Editor of Nature Climate Change regarding my undergraduate honors thesis research studying the bioenergy potential of methane emissions from the waste water of palm oil mill effluent. The piece was done in collaboration with researchers from the Townsend Biogeochemistry Lab at the Institute of Artic and Alpine Research at the University of Colorado. [link](https://www.dropbox.com/s/qjtn5ypnsh7ph4l/NatureCC_Taylor.Bilinski.Fancher_POME_nclimate2154.pdf?dl=0)
+
+<br>
+
+### Agricultural Advocacy Newsletter - Rocky Mountain Farmers Union, Wyoming Chapter
+#### Summer 2021 RMFU Wyoming Newsletter
+During 2020 and 2021, I served as a part-time Wyoming Membership Coordinator for the Rocky Mountain Farmers Union. During this time I wrote articles, edited, and created the Wyoming chapter newsletter. For a sample newsletterplease follow this [link](https://www.dropbox.com/s/brdu6xezg197zfw/WY%20Newsletter%20Aug.pdf?dl=0). 
+
+<br>
+
+### Technical Writing - Division of Energy and Mineral Development, OIA, DOI
+#### Grant Writing Guide for Small Scale Woody Biomass Energy Development on Tribal Trust lands
+From 2013 to 2016 I worked with the Division of Energy and Mineral Development as an Engineering Associate assisting with the development of renewable energy on Tribal Trust lands. I develop this grant writing manual in our to help applicant ensure the were able to submit a thorough and competitive grant submission to the federal Energy and Mineral Development Program. To view the grant writing guide, please follow this [link](https://www.dropbox.com/s/dldsyee4c5ijv3y/EMDP%20Grant%20Writing%20Guide%20for%20Small%20Scale%20Biomass%20Projects_IEED_ASIA.pdf?dl=0). 
+

@@ -23,7 +23,7 @@ Welcome! I am a second year master's student at the University of Wyoming Depart
 
 ## Contact
 
-See my [[Bio page](https://crumplab.github.io/LabJournalWebsite/Journal.html)] bio page, or email me directly at hfancher@uwyo.edu 
+See my [[Bio page](https://hfancher.github.io/HanaFanch/Bio.html)] bio page, or email me directly at hfancher@uwyo.edu 
 
 </div>
 <div class="col-sm-6">

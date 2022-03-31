@@ -1,0 +1,34 @@
+---
+title: "Links"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<br>
+
+### Helpful Resources, Interesting Ag News, and More!
+
+Here are some links to resources I've found helpful, organizations doing impactful world, and other miscellanous interesting tid-bits. Enjoy!
+
+<br>
+
+#### Resources/Books
+The USDA Three Decades of Consolidation in U.S. Agriculture [Report Summary](https://www.dropbox.com/s/nzzvnra31y5qyy1/USDA_Three%20Decades%20of%20Consolidation_summary.pdf?dl=0)
+
+<br>
+
+#### Organizations
+Of course my home university [University of Wyoming](https://www.uwyo.edu/agecon/) <br>
+[Quivira Coalition](https://quiviracoalition.org) <br>
+[Grasslands-LLC](https://www.grasslands-llc.com) <br>
+[Ranch Advisory Partners](https://www.ranchadvisory.com) <br>
+[Point Blue Conservation](https://www.pointblue.org) <br>
+
+<br>
+
+#### Media/Podcasts
+
+

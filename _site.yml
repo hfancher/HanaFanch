@@ -6,14 +6,12 @@ navbar:
       href: index.html
     - text: "Bio"
       href: Bio.html
-    - text: "Current Projects"
+    - text: "Thesis"
       href: Abstract_SE_Beef.html
-    - text: "Past Projects"
-      href: pastexample.html
     - text: "Writing Samples"
-      href: Links.html
+      href: WritingSamples.html
     - text: "Coding Samples"
-      href: Links.html
+      href: CodeSample_loop.html
     - text: "Links"
-      href: Links.html
+      href: LinksHF.html
 output_dir: "docs"
